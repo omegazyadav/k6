@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  k6:
+    container_name: k6
+    image: loadimpact/k6
+    volumes:
+      - "./examples:/opt"
+    ports:
+      - "6565:6565"
+    restart: always
