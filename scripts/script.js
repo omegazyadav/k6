@@ -23,7 +23,7 @@ export const options = {
 export default function() {
   // our HTTP request, note that we are saving the response to res, which can be accessed later
 
-  const res = http.get('test.');
+  const res = http.get('http://test.k6.io');
 
   sleep(1);
 
