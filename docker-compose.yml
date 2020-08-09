@@ -1,11 +1,12 @@
-version: "3.8"
+version: "3.5"
 
 services:
   k6:
     container_name: k6
+    tty: true
     image: loadimpact/k6
     volumes:
-      - "./examples:/opt"
+      - "./scripts:/opt/k6/"
     ports:
       - "6565:6565"
     restart: always
